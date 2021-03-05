@@ -5,7 +5,6 @@
 #include <string>
 #include <iostream>
 
-
 // using namespace System;
 
 bool Guess(int number) {
