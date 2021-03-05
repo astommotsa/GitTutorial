@@ -9,12 +9,18 @@
 // using namespace System;
 
 bool Guess(int number) {
-	return true;
+	return false;
 }
 
 int main()
 {
+	int guess;
 
+	do {
+		std::cin >> guess;
+	} while (!Guess(guess));
+
+	return 0;
 }
 
 // 執行程式: Ctrl + F5 或 [偵錯] > [啟動但不偵錯] 功能表
