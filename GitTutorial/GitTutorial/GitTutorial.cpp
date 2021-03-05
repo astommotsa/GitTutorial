@@ -9,11 +9,26 @@
 // using namespace System;
 
 bool Guess(int number) {
-	return true;
+	static int target = -1;
+
+	if (target == -1) {
+		Random r;
+		target = r.Next() % 100 + 1;
+	}
+
+	if (number == target) return true;
+	return false;
 }
 
 int main()
 {
+	int guess;
+
+	do {
+		std::cin >> guess;
+	} while (!Guess(guess));
+
+	return 0;
 
 }
 
